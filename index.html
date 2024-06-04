@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXTI TIENDA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imag/1x/ICO.ico">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+     <script src="JS/scrip.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  
+
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo"><img src="imag/1x/Recurso_1.png"></a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imag/menu.png" class="menu=icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li class="active"><i class="fas fa-home"></i> <a href="index.html">Inicio</a></li>
+                    <li><i class="fas fa-users"></i> <a href="nosotros.html">Nosotros</a></li>
+                    <li><i class="fas fa-box"></i> <a href="productos.html">Producto</a></li>
+                    <li><i class="far fa-id-badge"></i> <a href="contacto.html">Contacto</a></li>
+                    <li><i class="fas fa-user-plus"></i> <a href="registro.html">Registrarse</a></li>
+                    <li><i class="fas fa-arrow-alt-circle-right"></i> <a href="login.html">Ingresar</a></li>
+                     <?php echo  $_SESSION["user"]?>
+                </ul>
+
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="imag/car.svg"id="img-carrito" alt="carrito"> 
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                  <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <section id="container-slider">	
+            <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+            <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+            <ul class="listslider">
+              <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+              <li><a itlist="itList_1" href="#"></a></li>
+              <li><a itlist="itList_2" href="#"></a></li>
+            </ul>
+            <ul id="slider">
+              <li style="background-image: url('imag/fondo.jpeg'); z-index:0; opacity: 1;">
+                <div class="content_slider" >
+                  <div>
+                    <h2>TELAS AL ALCANCE DE TODOS</h2>
+               
+                <a href="#" class="btnSlider">Ver más</a>
+              </div>
+                </div>
+              </li>
+              <li style="background-image: url('imag/fondo.jpeg');" ">
+                <div class="content_slider" >
+                  <div>
+                    <h2></h2>
+                <p></p>
+                <a href="#" class="btnSlider">Ver más</a>
+              </div>
+                </div>
+              </li>
+              <li style="background-image: url('imag/fondo.jpeg'); ">
+                <div class="content_slider" >
+                  <div>
+                    <h2></h2>
+                <p>L.</p>
+                <a href="#" class="btnSlider">Ver más</a>
+              </div>
+                </div>
+              </li>
+           </ul>
+         </section>
+
+
+
+
+
+
+        <div class="healder-content container">
+            <div class="header-img">
+              
+            </div>
+            <br>
+            <div class="header-txt">
+                <h1>ofertas especiales</h1>
+                <p>estrena las mejores telas</p>
+                <a href="#" class="btn-1">INFORMACIÓN</a>
+            </div>
+        </div>
+        
+    </header>
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imag/TELAS1.jpg" alt="">               
+            </div>
+            <div class="ofert-txt">
+                <h3>producto-1</h3>
+                <a href="#" class="btn-2">informacion</a>                
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imag/TELAS2.JPG (2).jpg" alt="">               
+            </div>
+            <div class="ofert-txt">
+                <h3>producto-2</h3>
+                <a href="#" class="btn-2">informacion</a>                
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imag/TELAS3.jpg" alt="">               
+            </div>
+            <div class="ofert-txt">
+                <h3>producto-3</h3>
+                <a href="#" class="btn-2">informacion</a>                
+            </div>
+        </div>
+
+    </section>
+
+    <main class="products container" id="lista-1">
+
+        <h2>producto</h2>
+
+        <div class="product-content">
+
+            <div class="product">
+                <img src="imag/imagen1.jpg.jpg" alt="">
+                <div class="product-txt">
+                    <h3>POPELINA</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">s/20</p>
+                    <a href="#" class="agregar-carrito-btn2" data-id="1"> <i class="fas fa-cart-plus"></i>agregar al carrito</a>               
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imag/imagen2.png.jpg" alt="">
+                <div class="product-txt">
+                    <h3>MICROPOLAR</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">s/20</p>
+                    <a href="#" class="agregar-carrito-btn2" data-id="2"> <i class="fas fa-cart-plus"></i> agregar al carrito</a>               
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imag/imagen3.jpg.png" alt="">
+                <div class="product-txt">
+                    <h3>PELUCHE</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">s/20</p>
+                    <a href="#" class="agregar-carrito-btn2" data-id="3"> <i class="fas fa-cart-plus"></i> agregar al carrito</a>               
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imag/imagen4.jpg.jpg" alt="">
+                <div class="product-txt">
+                    <h3>POLAR</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">s/20</p>
+                    <a href="#" class="agregar-carrito-btn2" data-id="4"><i class="fas fa-cart-plus"></i> agregar al carrito</a>               
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imag/imagen5.jpg.jpg" alt="">
+                <div class="product-txt">
+                    <h3>POLIESTER</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">s/20</p>
+                    <a href="#" class="agregar-carrito-btn2" data-id="5"><i class="fas fa-cart-plus"></i> agregar al carrito</a>               
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imag/imagen6.jpg.jpg" alt="">
+                <div class="product-txt">
+                    <h3>POLYNAN</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">s/20</p>
+                    <a href="#" class="agregar-carrito-btn2" data-id="6"><i class="fas fa-cart-plus"></i> agregar al carrito</a>               
+                </div>
+            </div>
+
+        </div>       
+
+    </main>
+
+    <section class="icon container">
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="imag/i1.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>
+                    Lorem ipsum dolor sit
+                </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="imag/i2.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>
+                    Lorem ipsum dolor sit
+                </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="imag/i3.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>
+                    Lorem ipsum dolor sit
+                </p>
+            </div>
+        </div>
+        <br>
+        
+
+    </section>
+
+    
+
+
+    
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="JS/scrip.js"></script>
+
+    
+</body>
+</html>
+
+
+
+

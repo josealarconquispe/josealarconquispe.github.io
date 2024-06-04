@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textitienda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imag/1x/ICO.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo"><img src="imag/1x/Recurso_1.png"></a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <a href="#" class="logo"><img src="imag/1x/logov.png"></a>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li class="active"><i class="fas fa-home"></i> <a href="indx.html">Inicio</a></li>
+                    <li><i class="fas fa-users"></i> <a href="nosotros.html">Nosotros</a></li>
+                    <li><i class="fas fa-box"></i> <a href="productos.html">Producto</a></li>
+                    <li><i class="far fa-id-badge"></i> <a href="contacto.html">Contacto</a></li>
+                    <li><i class="fas fa-user-plus"></i> <a href="registro.html">Registrarse</a></li>
+                    <li><i class="fas fa-arrow-alt-circle-right"></i> <a href="login.html">Ingresar</a></li>
+                </ul>
+
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="imag/car.svg"id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                  <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </header>
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imag/polar.jpg" alt="">               
+            </div>
+            <div class="ofert-txt">
+                <h3>polar</h3>
+                <a href="#" class="btn-1">ver</a>                
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imag/poliester.jpg" alt="">               
+            </div>
+            <div class="ofert-txt">
+                <h3>poliester</h3>
+                <a href="#" class="btn-2">ver</a>                
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imag/micropolar.jpg" alt="">               
+            </div>
+            <div class="ofert-txt">
+                <h3>micropolar</h3>
+                <a href="#" class="btn-3">ver</a>                
+            </div>
+        </div>
+		
+    </section>
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imag/peluche.jpg" alt="">               
+            </div>
+            <div class="ofert-txt">
+                <h3>peluche</h3>
+                <a href="#" class="btn-4">ver</a>                
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imag/polynan.jpg" alt="">               
+            </div>
+            <div class="ofert-txt">
+                <h3>polynan</h3>
+                <a href="#" class="btn-5">ver</a>                
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imag/latex.jpg" alt="">               
+            </div>
+            <div class="ofert-txt">
+                <h3>latex</h3>
+                <a href="#" class="btn-6">ver</a>                
+            </div>
+        </div>
+		
+    </section>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="images-container">
+                <div class="image-item"><img src="imag/polar.jpg" alt="imagen1"><textarea placeholder="Agregar texto"></textarea></div>
+                <div class="image-item"><img src="imag/poliester.jpg" alt="imagen2"><textarea placeholder="Agregar texto"></textarea></div>
+                <div class="image-item"><img src="imag/micropolar.jpg" alt="imagen3"><textarea placeholder="Agregar texto"></textarea></div>
+                <div class="image-item"><img src="imag/peluche.jpg" alt="imagen4"><textarea placeholder="Agregar texto"></textarea></div>
+                <div class="image-item"><img src="imag/polynan.jpg" alt="imagen5"><textarea placeholder="Agregar texto"></textarea></div>
+                <div class="image-item"><img src="imag/latex.jpg" alt="imagen6"><textarea placeholder="Agregar texto"></textarea></div>
+            </div>
+            <button class="btn-agregar">Agregar</button>
+        </div>
+    </div>
+
+
+
+    <script src="scrip.js"></script>
+
+    
+</body>
+</html>
+
+
+
+

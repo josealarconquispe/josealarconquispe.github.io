@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textitienda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imag/1x/ICO.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo"><img src="imag/1x/Recurso_1.png"></a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imag/menu.png" class="menu=icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li class="active"><i class="fas fa-home"></i> <a href="indx.html">Inicio</a></li>
+                    <li><i class="fas fa-users"></i> <a href="nosotros.html">Nosotros</a></li>
+                    <li><i class="fas fa-box"></i> <a href="productos.html">Producto</a></li>
+                    <li><i class="far fa-id-badge"></i> <a href="contacto.html">Contacto</a></li>
+                    <li><i class="fas fa-user-plus"></i> <a href="registro.html">Registrarse</a></li>
+                    <li><i class="fas fa-arrow-alt-circle-right"></i> <a href="login.html">Ingresar</a></li>
+                </ul>
+
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="imag/car.svg"id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                  <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+		<style>
+        .container {
+            display: flex;
+        }
+        .image {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .text {
+            flex: 2;
+        }
+        .text h2 {
+            margin-top: 0;
+        }
+    </style>
+    </header>
+
+    <div class="container">
+
+        <div class="contenido-textos">
+
+
+            <h2 class="título">CONTÁCTENOS</h2>
+
+            <p>ventastextitienda@gmail.com</p>
+
+            <P>+51 993 048 609</P>
+
+            <P>Av.Surco 187</P>
+
+            <P>www.textitienda.com</P>
+            <P>Redes Sociales:</P>
+            <a href="https://wa.me/51918134609?text=Hola, me interesa sus productos" target="_blank"><img src="imag/Whatapp_icono.png" style="width: 30px; height: 30px;" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=61560633834115" target="_blank"><img src="imag/Face_logo.png" style="width: 30px; height: 30px;" alt=""></a>
+        </div>
+        <div class="image">
+
+
+            <img src="imag/contacta.jpg" alt="" style="width:60%;">
+            <style>
+        .container {
+            display: flex;
+        }
+        .image {
+            float: right;
+            width: 10px;
+            margin: 20px;
+        }
+        .text {
+            flex: 2;
+        }
+        .text h2 {
+            margin-top: 0;
+        }
+    </style>
+        </div>
+     
+    </div>
+
+
+
+    
+
+
+
+    <script src="scrip.js"></script>
+
+    
+</body>
+</html>
